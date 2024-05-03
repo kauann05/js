@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NACIONALIDADE</title>
+</head>
+
+<body>
+    informe seu pais: <input type="text" name="lugar" id="lugar">
+    <input type="button" value="verificar" onclick="calcular()">
+
+    <div id="res">
+
+    </div>
+
+    <script>
+        function calcular() {
+            var fun = window.document.getElementById('lugar')
+            var res = window.document.getElementById('res')
+            var vel = Number(fun.value)
+            res.innerHTML += `<p>você está neste local ${vel} </p>`
+
+            if (inf == brasil) {
+                res.innerHTML += `você é brasileiro`
+            } else {
+                res.innerHTML += `você é estrangeiro`
+            }
+        }
+
+
+
+    </script>
+</body>
+
+</html>
